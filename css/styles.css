@@ -1,20 +1,43 @@
 body {
  font-family: Montserrat, sans-serif;
+ text-align: center;
 }
 
-h1 { 
+h1, h2, h3, h4, h5, h6 {
+ font-family: Montserrat, sans-serif;
+ font-weight: bold; 
+}
+
+.padding-pattern {
+ padding: 7% 15%;
+}
+
+.big-heading { 
  font-size: 3.5rem;  
  line-height: 1.5;  
  font-weight: 900;
 }
 
+.section-heading { 
+ font-size: 3rem;  
+ line-height: 1.5;
+}
+
 #title {
+ text-align: left;
+}
+
+.colored-section {
  background-color: #ff4c68;
  color: white;
 }
 
+.white-section {
+ background-color: #fff;
+}
+
 .container-fluid {
- padding: 3% 15%;
+ padding: 3% 15% 7%;
 }
 
 .navbar-brand {
@@ -36,17 +59,19 @@ h1 {
  font-family: Montserrat-Light;
 }
 
-.download-button{
+.download-button {
  margin: 5% 3% 5% 0;
 }
 
 .title-image {
-  width: 50%;
   transform: rotate(25deg);
+  width: 18%;
+  position: absolute;
+  right: 25%;
 }
 
 #features {
- padding: 7% 15%;
+ position: relative;
 }
 
 .feature-icon {
@@ -59,16 +84,68 @@ h1 {
 }
 
 .feature-box {
- text-align: center;
+ 
  padding: 4.5%;
 }
 
 .feature-title {
- font-family: Montserrat, sans-serif;
- font-weight: bold;
+ font-size: 1rem;
 }
 
 .feature-description {
  color: #8f8f8f;
  padding: 0% 10%;
+}
+
+#testimonials {
+ background-color: #ef8172;
+}
+
+.testimonials-text {
+ font-size: 3rem;  
+ line-height: 1.5;	
+}
+
+.testimonials-image {
+ width: 10%;
+ border-radius: 100%;
+ margin: 20px;
+}
+
+#press {
+ padding-bottom: 3%;
+ background-color: #ef8172;
+}
+
+#press > img {
+ width: 15%;
+ margin: 20px 20px 15px;
+}
+
+#pricing {
+ padding: 100px;
+}
+
+.price-text {
+ font-size: 3rem;  
+ line-height: 1.5;
+}
+
+.pricing-column {
+ padding: 3% 2%;
+}
+
+@media (max-width: 1000px) {
+ .title-image {
+  position: static;
+  transform: rotate(0);
+ }
+ 
+ #title {
+  text-align: center;
+ }
+}
+
+.social-icon {
+ margin: 20px 10px;
 }
